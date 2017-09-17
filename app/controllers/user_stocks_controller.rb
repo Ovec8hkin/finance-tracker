@@ -42,8 +42,6 @@ class UserStocksController < ApplicationController
       end
     end
 
-    #@user_stock = UserStock.new(user_stock_params)
-
     respond_to do |format|
       if @user_stock.save
         format.html { redirect_to my_portfolio_path, notice: "Stock was succesfully added to your portfolio." }
